@@ -1,0 +1,4 @@
+FROM nginx:1.25.5
+LABEL about="Village in Gagra"
+EXPOSE 80 443
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
