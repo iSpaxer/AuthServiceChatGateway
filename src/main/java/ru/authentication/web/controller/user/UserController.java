@@ -33,4 +33,9 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.create(dto));
     }
 
+    @GetMapping(value = "/close", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> closeApi() {
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
+
 }
